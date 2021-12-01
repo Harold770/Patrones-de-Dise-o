@@ -44,6 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Comportamiento\Observer.cs" />
+    <Compile Include="Clases\Creacionales\Abstrac-Factory\Menu.cs" />
+    <Compile Include="Clases\Creacionales\Abstrac-Factory\MenuChina.cs" />
+    <Compile Include="Clases\Creacionales\Abstrac-Factory\MenuMexico.cs" />
+    <Compile Include="Clases\Creacionales\Abstrac-Factory\Program.cs" />
+    <Compile Include="Clases\Creacionales\Abstrac-Factory\Restauran.cs" />
+    <Compile Include="Clases\Creacionales\Abstrac-Factory\restauranchino.cs" />
+    <Compile Include="Clases\Creacionales\Abstrac-Factory\restauranMexicano.cs" />
     <Compile Include="Clases\Creacionales\Builder.cs" />
     <Compile Include="Clases\Creacionales\Prototype.cs" />
     <Compile Include="Clases\Creacionales\Singleton\Program.cs" />
