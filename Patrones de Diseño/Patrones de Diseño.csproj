@@ -44,9 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Comportamiento\ChainOfResponsability.cs" />
+    <Compile Include="Clases\Comportamiento\Command.cs" />
+    <Compile Include="Clases\Comportamiento\Interpreter.cs" />
     <Compile Include="Clases\Comportamiento\Iterator.cs" />
+    <Compile Include="Clases\Comportamiento\Memento.cs" />
     <Compile Include="Clases\Comportamiento\State.cs" />
     <Compile Include="Clases\Comportamiento\Template.Method.cs" />
+    <Compile Include="Clases\Comportamiento\Visitor.cs" />
     <Compile Include="Clases\Creacionales\AbstracFactory.cs" />
     <Compile Include="Clases\Creacionales\FactoryMethod.cs" />
     <Compile Include="Clases\Comportamiento\Mediator.cs" />
