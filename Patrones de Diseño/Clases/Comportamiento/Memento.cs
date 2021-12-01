@@ -27,7 +27,7 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
                 Console.ReadKey();
             }
             [Serializable]
-            class Constructor
+            public class Constructor
             {
                 public string Nombre { get; set; }
                 public int Modelo { get; set; }
@@ -43,13 +43,13 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
                 {
                     Console.WriteLine("{0}-{1} con un costo de {2}", Nombre, Modelo, Costo);
                 }
-                public Memento CrearMemento()
+                public Memoria CrearMemento()
                 {
-                    Memento memento = new Memento();
+                    Memoria memento = new Memoria();
                     memento.Guardar(this);
                     return memento;
                 }
-                public void Restaurar(Memento memento)
+                public void Restaurar(Memoria memento)
                 {
                     Constructor temp = memento.Restaurar();
                     Nombre = temp.Nombre;
@@ -58,7 +58,7 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
                 }
 
             }
-            public class Memento
+            public class Memoria
             {
                 internal void Guardar(Constructor obj)
                 {
@@ -80,7 +80,7 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
             }
             class CareTaker
             {
-                public Memento memento { get; set; }
+                public Memoria memento { get; set; }
             }
         }
     }
