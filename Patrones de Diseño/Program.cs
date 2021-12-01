@@ -7,6 +7,7 @@ using Patrones_de_Diseño.Clases;
 using Patrones_de_Diseño.Clases.Comportamiento;
 using Patrones_de_Diseño.Clases.Creacionales;
 using static Patrones_de_Diseño.Clases.Prototype;
+using Patrones_de_Diseño.Clases.Estructurales;
 
 namespace Patrones_de_Diseño
 {
@@ -14,7 +15,7 @@ namespace Patrones_de_Diseño
     {
       static void Main(string[] args)
         {
-            ProgramStrategy.StrategyTest(args);
+            ProgramState.ProgramStateTest(args);
             Console.ReadKey();
         }
        

@@ -43,26 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Comportamiento\ChainOfResponsability.cs" />
+    <Compile Include="Clases\Comportamiento\Iterator.cs" />
+    <Compile Include="Clases\Comportamiento\State.cs" />
+    <Compile Include="Clases\Comportamiento\Template.Method.cs" />
+    <Compile Include="Clases\Creacionales\FactoryMethod.cs" />
+    <Compile Include="Clases\Comportamiento\Mediator.cs" />
     <Compile Include="Clases\Comportamiento\Observer.cs" />
-    <Compile Include="Clases\Creacionales\Abstrac-Factory\Menu.cs" />
-    <Compile Include="Clases\Creacionales\Abstrac-Factory\MenuChina.cs" />
-    <Compile Include="Clases\Creacionales\Abstrac-Factory\MenuMexico.cs" />
-    <Compile Include="Clases\Creacionales\Abstrac-Factory\Program.cs" />
-    <Compile Include="Clases\Creacionales\Abstrac-Factory\Restauran.cs" />
-    <Compile Include="Clases\Creacionales\Abstrac-Factory\restauranchino.cs" />
-    <Compile Include="Clases\Creacionales\Abstrac-Factory\restauranMexicano.cs" />
+    <Compile Include="Clases\Comportamiento\Strategy.cs" />
     <Compile Include="Clases\Creacionales\Builder.cs" />
     <Compile Include="Clases\Creacionales\Prototype.cs" />
-    <Compile Include="Clases\Creacionales\Singleton\Program.cs" />
-    <Compile Include="Clases\Creacionales\Singleton\Singleton.cs" />
+    <Compile Include="Clases\Estructurales\Adapter.cs" />
+    <Compile Include="Clases\Estructurales\Composite.cs" />
+    <Compile Include="Clases\Estructurales\Facade.cs" />
+    <Compile Include="Clases\Estructurales\Flyweight.cs" />
+    <Compile Include="Clases\Estructurales\Proxy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\Estructurales\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
