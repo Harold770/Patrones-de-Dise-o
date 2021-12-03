@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace Patrones_de_Diseño.Clases.Creacionales
 {
-    internal class Builder
-    {
-       
-    }
 
     public interface Ibuilder
     {

@@ -24,10 +24,6 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
         public IHandler SetNext(IHandler handler)
         {
             this._nextHandler = handler;
-
-            // Returning a handler from here will let us link handlers in a
-            // convenient way like this:
-            // monkey.SetNext(squirrel).SetNext(dog);
             return handler;
         }
 
@@ -50,7 +46,7 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
         {
             if ((request as string) == "Banana")
             {
-                return $"Monkey: I'll eat the {request.ToString()}.\n";
+                return $"Mono: yo comere la {request.ToString()}.\n";
             }
             else
             {
@@ -63,9 +59,9 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
     {
         public override object Handle(object request)
         {
-            if (request.ToString() == "Nut")
+            if (request.ToString() == "Nuez")
             {
-                return $"Squirrel: I'll eat the {request.ToString()}.\n";
+                return $"Yo comere la {request.ToString()}.\n";
             }
             else
             {
@@ -78,9 +74,9 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
     {
         public override object Handle(object request)
         {
-            if (request.ToString() == "MeatBall")
+            if (request.ToString() == "Bola de carne")
             {
-                return $"Dog: I'll eat the {request.ToString()}.\n";
+                return $"Dog: Comere la {request.ToString()}.\n";
             }
             else
             {
@@ -95,9 +91,9 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
         // most cases, it is not even aware that the handler is part of a chain.
         public static void ClientCode(AbstractHandler handler)
         {
-            foreach (var food in new List<string> { "Nut", "Banana", "Cup of coffee" })
+            foreach (var food in new List<string> { "Nuez", "Banana", "Cup of coffee" })
             {
-                Console.WriteLine($"Client: Who wants a {food}?");
+                Console.WriteLine($"Cliente: Quien quiere {food}?");
 
                 var result = handler.Handle(food);
 
@@ -107,7 +103,7 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
                 }
                 else
                 {
-                    Console.WriteLine($"   {food} was left untouched.");
+                    Console.WriteLine($"   {food} no se consumió.");
                 }
             }
         }
@@ -126,11 +122,11 @@ namespace Patrones_de_Diseño.Clases.Comportamiento
 
             // The client should be able to send a request to any handler, not
             // just the first one in the chain.
-            Console.WriteLine("Chain: Monkey > Squirrel > Dog\n");
+            Console.WriteLine("Cadena: Mono > Ardilla > Perro\n");
             Client.ClientCode(monkey);
             Console.WriteLine();
 
-            Console.WriteLine("Subchain: Squirrel > Dog\n");
+            Console.WriteLine("Subcadena: Ardilla > Perro\n");
             Client.ClientCode(squirrel);
         }
     }

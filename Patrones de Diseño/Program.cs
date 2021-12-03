@@ -15,7 +15,7 @@ namespace Patrones_de_Diseño
     {
       static void Main(string[] args)
         {
-            ProgramSingleton.SingletonTest(args);
+            ProgramAdapter.AdapterTest(args);
             Console.ReadKey();
         }
        
